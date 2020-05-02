@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.container{
+   
+    height: 150vh;
+    /* background: lightcoral; */
+   
+    
+}
+.box{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(1rem,1fr) minmax(min-content,1100px) minmax(1rem,1fr);
+    grid-template-areas: ". center .";
+
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    height: 100%;
+    /* background: lightgreen; */
+    display: grid;
+    grid-template-rows: 60fr 40fr;
+    grid-template-areas: "upper"
+                          "lower";
+}
+.upper{
+    /* background: limegreen; */
+    
+
+}
+.outerclock{
+    height: 100%;
+    width: 100%;
+    /* background:lightsalmon; */
+   
+   
+}
+.clock{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    /* border: solid 1px #ffffff; */
+    background:url("./pexels-photo-3375997.jpeg");
+    background-size: 100% 100%;
+    box-shadow: 2px 4px 10px 0px;
+
+    
+}
+.innerclock1{
+    background: url("./build.jpeg");
+    background-size: 100% 100%;
+    box-shadow: 2px 4px 10px 0px;
+
+}
+.innerclock2{
+    background: url("./build1.jpeg");
+    background-size: 100% 100%;
+    box-shadow: 2px 4px 10px 0px;
+
+}
+.innerclock3{
+    background: url("./build3.jpeg");
+    background-size: 100% 100%;
+    box-shadow: 2px 4px 10px 0px;
+
+}
+.needles{
+    position: relative;
+   height: 100%;
+   width: 100%;
+   /* background: lightgreen; */
+  
+   
+
+}
+.hand{
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    height: 4px;
+    width: 50%;
+    background: #f5f6fad3;
+    transition-timing-function: cubic-bezier(0.1,3,0.5,1); 
+}
+.hourneedle{
+    background: #0a3d62;
+
+}
+.name{
+    padding-top: 20px;
+    font-size: 3rem;
+    font-family: 'Kalam', cursive;
+}
+
+.name1{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Kalam', cursive;
+}
+.name2{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Kalam', cursive;
+}
+.name3{
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'Kalam', cursive;
+}
+.needles1{
+    position: relative;
+   height: 100%;
+   width: 100%;
+   /* background: lightgreen; */
+   
+  
+   
+
+}
+
+
+
+.needles2{
+    position: relative;
+   height: 100%;
+   width: 100%;
+   /* background: lightgreen; */
+  
+   
+
+}
+
+
+.needles3{
+    position: relative;
+   height: 100%;
+   width: 100%;
+   /* background: lightgreen; */
+  
+   
+
+}
+
+
+
+
+
+.lower{
+    width: 100%;
+    height: 100%;
+    /* background: yellow; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem,1fr));
+    grid-row-gap: 5rem;
+    grid-column-gap: 1rem;
+
+}
+.smallclock{
+    height: 50%;
+    width: 100%;
+    /* border: solid 2px black; */
+}
+.innerclock{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* border: solid 4px #ffffff; */
+    /* background: transparent; */
+
+}
+@media only screen and (max-width: 430px){
+    .clock{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        /* border: solid 1px #ffffff; */
+        background:url("./pexels-photo-3375997.jpeg");
+        background-size: 100% 100%;
+        box-shadow: 2px 4px 10px 0px;
+    
+        
+    }
+
+}
